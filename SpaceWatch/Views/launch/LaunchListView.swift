@@ -9,20 +9,20 @@
 import SwiftUI
 
 struct LaunchListView: View {
+    @ObservedObject var launchStore: LaunchStore = LaunchStore()
+    
     var body: some View {
         NavigationView {
             List {
-                LaunchListRowView(title: "Test Launch 1", location: "Vienna")
-                LaunchListRowView(title: "Test Launch 1", location: "Vienna")
+                ForEach(launchStore.launches) { launch in
+                    LaunchListRowView(title: launch.mission_name, location: "Vienna")
+                }
             }
             .navigationBarTitle("Upcoming")
         }
-    }
-}
-
-struct LaunchListView_Previews: PreviewProvider {
-    static var previews: some View {
-        LaunchListView()
+        .onAppear {
+            self.launchStore.fetchUpcoming()
+        }
     }
 }
 

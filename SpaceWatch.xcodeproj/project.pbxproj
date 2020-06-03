@@ -15,6 +15,10 @@
 		36C54675248811D900DC5AF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C54674248811D900DC5AF4 /* Preview Assets.xcassets */; };
 		36C54678248811D900DC5AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C54676248811D900DC5AF4 /* LaunchScreen.storyboard */; };
 		36C5468A24882D3B00DC5AF4 /* LaunchListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5468924882D3B00DC5AF4 /* LaunchListRowView.swift */; };
+		36C5468D24882F2600DC5AF4 /* SpaceXDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5468C24882F2600DC5AF4 /* SpaceXDataService.swift */; };
+		36C5469024882F7300DC5AF4 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5468F24882F7300DC5AF4 /* Launch.swift */; };
+		36C5469224882FC100DC5AF4 /* LaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5469124882FC100DC5AF4 /* LaunchSite.swift */; };
+		36C54695248832DE00DC5AF4 /* LaunchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C54694248832DE00DC5AF4 /* LaunchStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		36C54677248811D900DC5AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36C54679248811D900DC5AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36C5468924882D3B00DC5AF4 /* LaunchListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListRowView.swift; sourceTree = "<group>"; };
+		36C5468C24882F2600DC5AF4 /* SpaceXDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXDataService.swift; sourceTree = "<group>"; };
+		36C5468F24882F7300DC5AF4 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		36C5469124882FC100DC5AF4 /* LaunchSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSite.swift; sourceTree = "<group>"; };
+		36C54694248832DE00DC5AF4 /* LaunchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,9 @@
 		36C54667248811D600DC5AF4 /* SpaceWatch */ = {
 			isa = PBXGroup;
 			children = (
+				36C54693248832D300DC5AF4 /* Stores */,
+				36C5468E24882F6A00DC5AF4 /* Models */,
+				36C5468B24882F0500DC5AF4 /* Services */,
 				36C546812488163000DC5AF4 /* Views */,
 				36C54684248816D900DC5AF4 /* Resources */,
 				36C546852488170000DC5AF4 /* Supporting Files */,
@@ -111,6 +122,31 @@
 				36C5468924882D3B00DC5AF4 /* LaunchListRowView.swift */,
 			);
 			path = launch;
+			sourceTree = "<group>";
+		};
+		36C5468B24882F0500DC5AF4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				36C5468C24882F2600DC5AF4 /* SpaceXDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		36C5468E24882F6A00DC5AF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36C5468F24882F7300DC5AF4 /* Launch.swift */,
+				36C5469124882FC100DC5AF4 /* LaunchSite.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36C54693248832D300DC5AF4 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				36C54694248832DE00DC5AF4 /* LaunchStore.swift */,
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +223,10 @@
 				36C5468A24882D3B00DC5AF4 /* LaunchListRowView.swift in Sources */,
 				36C54669248811D600DC5AF4 /* AppDelegate.swift in Sources */,
 				36C5466B248811D600DC5AF4 /* SceneDelegate.swift in Sources */,
+				36C54695248832DE00DC5AF4 /* LaunchStore.swift in Sources */,
+				36C5469224882FC100DC5AF4 /* LaunchSite.swift in Sources */,
+				36C5468D24882F2600DC5AF4 /* SpaceXDataService.swift in Sources */,
+				36C5469024882F7300DC5AF4 /* Launch.swift in Sources */,
 				36C54670248811D600DC5AF4 /* LaunchListView.swift in Sources */,
 				36C5466E248811D600DC5AF4 /* SpaceWatch.xcdatamodeld in Sources */,
 			);
