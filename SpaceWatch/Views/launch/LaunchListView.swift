@@ -15,7 +15,7 @@ struct LaunchListView: View {
         NavigationView {
             List {
                 ForEach(launchStore.launches) { launch in
-                    LaunchListRowView(title: launch.mission_name, location: "Vienna")
+                    LaunchListRowView(title: launch.mission_name, location: launch.launch_site.site_name)
                 }
             }
             .navigationBarTitle("Upcoming")
