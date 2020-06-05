@@ -13,18 +13,24 @@ struct LaunchListRowView: View {
     var location: String
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text(title)
                 .font(.headline)
             Text(location)
                 .font(.subheadline)
         }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+        .padding()
+        .background(ColorManager.containerBackgroundColor)
+        .clipShape(
+            RoundedRectangle(cornerRadius: 10)
+        )
     }
 }
 
 struct LaunchListRowView_Previews: PreviewProvider {
     static var previews: some View {
         LaunchListRowView(title: "Launch Name", location: "Location")
-            .previewLayout(.sizeThatFits)
+            .previewLayout(.fixed(width: 500, height: 50))
     }
 }
