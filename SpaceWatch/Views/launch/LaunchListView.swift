@@ -22,6 +22,9 @@ struct LaunchListView: View {
         }
         .onAppear {
             self.launchStore.fetchUpcoming()
+
+            // Workaround since SwiftUI lists do not support any seperatorStyle settings yet
+            UITableView.appearance().separatorStyle = .none
         }
     }
 }
