@@ -21,6 +21,7 @@
 		36C54695248832DE00DC5AF4 /* LaunchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C54694248832DE00DC5AF4 /* LaunchStore.swift */; };
 		36C54697248A73B100DC5AF4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C54696248A73B100DC5AF4 /* Colors.xcassets */; };
 		36C5469A248A73FC00DC5AF4 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C54699248A73FC00DC5AF4 /* ColorManager.swift */; };
+		36C5469E248B93BD00DC5AF4 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5469D248B93BD00DC5AF4 /* LaunchDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		36C54694248832DE00DC5AF4 /* LaunchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStore.swift; sourceTree = "<group>"; };
 		36C54696248A73B100DC5AF4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		36C54699248A73FC00DC5AF4 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		36C5469D248B93BD00DC5AF4 /* LaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				36C5466F248811D600DC5AF4 /* LaunchListView.swift */,
 				36C5468924882D3B00DC5AF4 /* LaunchListRowView.swift */,
+				36C5469D248B93BD00DC5AF4 /* LaunchDetailView.swift */,
 			);
 			path = launch;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				36C5468A24882D3B00DC5AF4 /* LaunchListRowView.swift in Sources */,
 				36C5469A248A73FC00DC5AF4 /* ColorManager.swift in Sources */,
 				36C54669248811D600DC5AF4 /* AppDelegate.swift in Sources */,
+				36C5469E248B93BD00DC5AF4 /* LaunchDetailView.swift in Sources */,
 				36C5466B248811D600DC5AF4 /* SceneDelegate.swift in Sources */,
 				36C54695248832DE00DC5AF4 /* LaunchStore.swift in Sources */,
 				36C5469224882FC100DC5AF4 /* LaunchSite.swift in Sources */,
