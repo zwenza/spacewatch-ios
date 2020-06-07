@@ -15,10 +15,14 @@ struct LaunchListView: View {
         NavigationView {
             List {
                 ForEach(launchStore.launches) { launch in
-                    NavigationLink(destination: LaunchDetailView(launch: launch)) {
+                    ZStack {
+                        NavigationLink(destination: LaunchDetailView(launch: launch)) {
+                            // Workaround for hiding Disclosure icons in list views
+                            EmptyView()
+                        }
                         LaunchListRowView(title: launch.mission_name, location: launch.launch_site.site_name)
                     }
-                   
+                    
                 }
             }
             .navigationBarTitle("Upcoming")
@@ -28,6 +32,7 @@ struct LaunchListView: View {
 
             // Workaround since SwiftUI lists do not support any seperatorStyle settings yet
             UITableView.appearance().separatorStyle = .none
+            UITableViewCell.appearance().selectionStyle = .none
         }
     }
 }
