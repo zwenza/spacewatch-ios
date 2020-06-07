@@ -11,6 +11,12 @@ import SwiftUI
 struct LaunchListView: View {
     @ObservedObject var launchStore: LaunchStore = LaunchStore()
     
+    init() {
+        // Workaround since SwiftUI lists do not support seperatorStyle and selectionStyle settings yet
+        UITableView.appearance().separatorStyle = .none
+        UITableViewCell.appearance().selectionStyle = .none
+    }
+    
     var body: some View {
         NavigationView {
             List {
@@ -22,17 +28,12 @@ struct LaunchListView: View {
                         }
                         LaunchListRowView(title: launch.mission_name, location: launch.launch_site.site_name)
                     }
-                    
                 }
             }
             .navigationBarTitle("Upcoming")
         }
         .onAppear {
             self.launchStore.fetchUpcoming()
-
-            // Workaround since SwiftUI lists do not support any seperatorStyle settings yet
-            UITableView.appearance().separatorStyle = .none
-            UITableViewCell.appearance().selectionStyle = .none
         }
     }
 }
